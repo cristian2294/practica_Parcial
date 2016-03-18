@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="NFS-oT-Uat">
             <objects>
-                <viewController id="fqD-DQ-uaj" sceneMemberID="viewController">
+                <viewController id="fqD-DQ-uaj" customClass="DetailViewController" customModule="practica_parcial" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0FP-1H-AfT"/>
                         <viewControllerLayoutGuide type="bottom" id="X6x-Mu-fGN"/>
@@ -38,6 +38,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlp-ma-emh">
                                         <rect key="frame" x="0.0" y="51" width="150" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="btnAction:" destination="fqD-DQ-uaj" eventType="touchUpInside" id="fHP-NQ-0G5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -52,6 +55,11 @@
                             <constraint firstItem="8oW-kb-wOZ" firstAttribute="centerX" secondItem="XOI-KO-5sX" secondAttribute="centerX" id="Xr7-qr-ryW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnOutlet" destination="jlp-ma-emh" id="y9s-Pv-Xv9"/>
+                        <outlet property="labelOutlet" destination="ucv-fI-jzO" id="kTO-wG-sJc"/>
+                        <outlet property="txtOutlet" destination="xuJ-BI-ScQ" id="fr5-9N-vo6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gam-7j-rOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -101,7 +109,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Municipios" id="uZu-NI-L0z"/>
                     <connections>
-                        <segue destination="fqD-DQ-uaj" kind="show" id="Uhz-Gt-wzZ"/>
+                        <segue destination="fqD-DQ-uaj" kind="show" identifier="MunicipioDetail" id="Uhz-Gt-wzZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

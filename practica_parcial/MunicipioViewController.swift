@@ -28,15 +28,22 @@ class MunicipioViewController: UIViewController, UITableViewDataSource, UITableV
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if let detailVc = segue.destinationViewController as? DetailViewController{
+            
+            if let municipio = sender as? Municipio{
+                detailVc.municipio = municipio
+            }
+        }
     }
-    */
+    
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -55,5 +62,12 @@ class MunicipioViewController: UIViewController, UITableViewDataSource, UITableV
         return municipios.count
     }
     
+    
+    //Mark delegate
+    
+    func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
+        let municipio = municipios[indexPath.row]
+        self.performSegueWithIdentifier("MunicipioDetail", sender: municipio)
+    }
 
 }

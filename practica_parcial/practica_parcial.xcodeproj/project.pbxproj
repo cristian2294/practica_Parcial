@@ -14,6 +14,7 @@
 		8A918E681C9C8CA3001BBB09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A918E661C9C8CA3001BBB09 /* LaunchScreen.storyboard */; };
 		8A918E731C9C8DB5001BBB09 /* Municipio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A918E721C9C8DB5001BBB09 /* Municipio.swift */; };
 		8A918E751C9C93FF001BBB09 /* MunicipioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A918E741C9C93FF001BBB09 /* MunicipioViewController.swift */; };
+		8A918E771C9C9898001BBB09 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A918E761C9C9898001BBB09 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8A918E691C9C8CA3001BBB09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A918E721C9C8DB5001BBB09 /* Municipio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Municipio.swift; sourceTree = "<group>"; };
 		8A918E741C9C93FF001BBB09 /* MunicipioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MunicipioViewController.swift; sourceTree = "<group>"; };
+		8A918E761C9C9898001BBB09 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				8A918E5F1C9C8CA3001BBB09 /* ViewController.swift */,
 				8A918E741C9C93FF001BBB09 /* MunicipioViewController.swift */,
+				8A918E761C9C9898001BBB09 /* DetailViewController.swift */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 			files = (
 				8A918E751C9C93FF001BBB09 /* MunicipioViewController.swift in Sources */,
 				8A918E601C9C8CA3001BBB09 /* ViewController.swift in Sources */,
+				8A918E771C9C9898001BBB09 /* DetailViewController.swift in Sources */,
 				8A918E731C9C8DB5001BBB09 /* Municipio.swift in Sources */,
 				8A918E5E1C9C8CA3001BBB09 /* AppDelegate.swift in Sources */,
 			);
